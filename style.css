@@ -474,6 +474,14 @@ nav .fa-solid {
         flex-basis: 100%;
     }
 }
+a.btn:hover{
+    transform: translateY(-2px);
+    opacity: 0.6;
+
+}
+a.btn:active{
+    opacity: 0.2;
+}
 
 #msg{
     color: #61b752;
