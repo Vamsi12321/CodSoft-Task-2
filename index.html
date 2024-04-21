@@ -1,1 +1,295 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c96ce44f87.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+
+            <nav>
+                <h1 class="logo"> Profile</h1>
+
+                <ul id="sidemenu">
+
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Hello, I am Vamsi Vakada </p> <br>
+                <p> Full Stack <i class="fa-brands fa-webflow"></i>eb Developer</p>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ------------------------------------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images-3.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titles">About me</h1>
+                    <p>
+                        Hi, I'm Vamsi Vakada, a budding MERN stack developer. From front-end magic with React.js to
+                        server-side prowess with Node.js and Express.js, and seamless database management with MongoDB,
+                        I bring a dynamic skill set to the table. Eager to contribute my passion for creating robust and
+                        user-friendly applications to innovative projects. Let's build something extraordinary together!
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="Skills">
+                        <ul>
+                            <li><span>HTML/CSS</span><br>Structure and style web content for presentation in browsers.
+                            </li>
+                            <li><span>JavaScript/ReactJS</span><br>Create dynamic and interactive user interfaces for
+                                web applications.</li>
+                            <li><span>Node/ExpressJS with MongoDB</span><br>Develop server-side applications and manage
+                                data storage in a scalable and efficient manner.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>
+                                <span>Aug 2023 - May 2024 (running)</span> <br>
+                                A 6-month intensive MERN Stack training at [Cuvette Private Limited], specializing in
+                                MongoDB, Express.js, React.js, and Node.js. Developed hands-on skills in building
+                                responsive web applications with HTML, CSS, Bootstrap, and JavaScript. Demonstrated
+                                proficiency in collaborative projects, showcasing practical knowledge for a MERN Stack
+                                Developer role.
+                            </li>
+                            <li><span> Jan 2024 - Feb 2024</span><br>Internship At CodSoft On JavaScript Developement
+                            </li>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span> Bachelor Of Technology &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; 2019-2023</span><br>Anil Neerukonda Institute Of Technology And Sciences
+                                (Cgpa-8.21)
+                            </li>
+                            <li><span>Board Of Intermediate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; 2017-2019</span><br>Sri Chaitanya Junior College (Cgpa-9.86)</li>
+                            <li><span>Secondary School Certificate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    2016-2017</span><br>Sri Venketeswara Public School (Gpa-9.5) </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------services-------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Frontend development involves building the user interface and user experience of a website or
+                        web application. Developers use technologies like HTML, CSS, JavaScript and Reactjs to create
+                        interactive and visually appealing interfaces that users interact with directly in their
+                        browsers.</p>
+                    <a
+                        href="https://www.freecodecamp.org/news/front-end-developer-what-is-front-end-development-explained-in-plain-english/">Learn
+                        More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend Development</h2>
+                    <p>
+                        Backend development focuses on server-side logic, handling requests from the frontend, and
+                        interacting with databases. Backend developers use server-side programming language(
+                        Node.js) and framework (Express.js) to build the server
+                        logic, APIs, and manage data processing.</p>
+                    <a href="https://www.coursera.org/articles/back-end-developer">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Development</h2>
+                    <p>Database development is about designing, implementing, and managing databases to store and
+                        retrieve data efficiently. Developers use database management system(MongoDB
+                        ) and query languages (SQL) to create, read, update, and delete data. Ensuring
+                        data integrity, security, and performance are essential aspects of database development.</p>
+                    <a href="https://it-s.com/what-is-database-development/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------portfolio-------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+
+            <h1 class="sub-titles">Frontend Projects - Html/Css/JavaScript/Reactjs :</h1>
+
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="cofeee.jpg" alt="">
+                    <div class="layer">
+                        <h3>Coffee Shop</h3>
+                        <p>
+
+                            Crafted with HTML, CSS, and JavaScript, this responsive coffee shop website delights users
+                            with its sleek design and seamless functionality.</p>
+                        <a href="https://vamsi12321.github.io/CoffeShop/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="amazon.png" alt="">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>
+                            Enhanced with HTML, CSS, and a touch of JS, this Amazon-inspired design brings the familiar
+                            shopping interface to life.
+                        </p>
+                        <a href="https://vamsi12321.github.io/amazonclone/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="clock.jpg" alt="">
+                    <div class="layer">
+                        <h3>Digital Clock</h3>
+                        <p>
+                            Crafted with HTML, CSS, and JS, this digital clock elegantly displays the current time with
+                            style and functionality..</p>
+                        <a href="https://vamsi12321.github.io/CodSoft-Taskno-3/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Pocket Notes App</h3>
+                        <p>
+
+                            A React-based app for quick notes with grouped organization, featuring a
+                            responsive design and dependencies on React and React-router-dom.</p>
+                        <a href="https://react-module-test.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Movie App</h3>
+                        <p>
+                            React-based, register, choose genres, explore a homepage with user, weather,
+                            news, notes, timer cards.
+                        </p>
+                        <a href="https://capstone-react.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="work-4.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game App</h3>
+                        <p>
+                            Classic game implemented in React for a fun and interactive two-player experience with a
+                            user-friendly interface.</p>
+                        <a href="https://microproject-react-tic-tac-toe.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <a href="https://github.com/Vamsi12321" class="btn">See More</a>
+        </div>
+
+    </div>
+
+    <div class="play">
+        An Annoying game Wanna try ? <a href="https://vamsi12321.github.io/insectCatchGame/"> 👉Click Here</a> 😅
+
+    </div>
+    <!-- ----------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titles"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> vamsivakada163@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>(+91)8331086719</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/vamsi.versane"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vamsiversane?igsh=MTh6cXc5cndkZ283aQ=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vamsi-vakada-4a7793248/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="vamsi -1.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Vamsi Made with <i class="fa-solid fa-heart"></i></p>
+
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbwabtEQ7qhnbYxkKzzh6QVH2PUASZoXtwlFKNEU_ZRndhuu8eU6T7jA-NaaAkyOpLkq/exec"
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => { msg.innerHTML = "Message Sent Successfully" })
+            setTimeout(() => {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
